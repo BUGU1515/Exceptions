@@ -5,3 +5,8 @@ for _ in range(qtd):
 
 media = soma / qtd
 print("Média:", media)
+
+try:
+    print(dobro(valor))
+except ValueError:
+    print("Erro: Digite um número")

@@ -10,3 +10,8 @@ print("Nome:", dados["name"])
 
 ## Instale o módulo requests
 ## No terminal, execute: pip install requests
+
+try:
+    print(dobro(valor))
+except ValueError:
+    print("Erro: Digite um número")
