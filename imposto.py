@@ -1,8 +1,7 @@
-preco = float(input("Preço do produto: "))
-imposto = 1.1
-print("Preço com imposto:", preco * imposto)
-
 try:
-    print(dobro(valor))
+    preco = float(input("Preço do produto: "))
+    imposto = 1.1
+    print("Preço com imposto:", preco * imposto)
+
 except ValueError:
-    print("Erro: Digite um número")
+    print("Erro: Digite um número válido.")
