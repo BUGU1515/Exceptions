@@ -1,12 +1,12 @@
-qtd = int(input("Quantas notas? "))
-soma = 0
-for _ in range(qtd):
-    soma += float(input("Nota: "))
-
-media = soma / qtd
-print("Média:", media)
-
 try:
-    print(dobro(valor))
+    qtd = int(input("Quantas notas? "))
+    soma = 0
+
+    for _ in range(qtd):
+        soma += float(input("Nota: "))
+
+    media = soma / qtd
+    print("Média:", media)
+
 except ValueError:
-    print("Erro: Digite um número")
+    print("Erro: Digite apenas números válidos.")
