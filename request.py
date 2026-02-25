@@ -3,15 +3,10 @@ import requests
 nome = input("Digite um número para descobrir o pokemon: ").strip().lower()
 url = f"https://pokeapi.co/api/v2/pokemon/{nome}"
 
-resposta = requests.get(url)
-dados = resposta.json()
-
-print("Nome:", dados["name"])
-
-## Instale o módulo requests
-## No terminal, execute: pip install requests
-
 try:
-    print(dobro(valor))
+    resposta = requests.get(url)
+    dados = resposta.json()
+    print("Nome:", dados["name"])
+
 except ValueError:
-    print("Erro: Digite um número")
+    print("Erro: Digite apenas números.")
